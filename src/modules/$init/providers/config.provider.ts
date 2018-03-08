@@ -6,7 +6,7 @@ let config = null;
 function parseConfigFile(mode: string | null = 'dev'){
 
     try {
-        const configFilePath = path.resolve(require.main.filename, '../config', `${mode}.config.js`);
+        const configFilePath = path.resolve(process.cwd(), 'config', `${mode}.config.js`);
         const configFileExist = fs.existsSync(configFilePath);
 
         if (configFileExist){
