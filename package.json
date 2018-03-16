@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon index.js",
+    "dev": "pandora dev",
     "build": "tsc",
     "com": "node dist/server.js",
     "start:prod": "node dist/main.js",
@@ -28,6 +29,7 @@
     "@types/node": "^9.3.0",
     "jest": "^22.4.2",
     "nodemon": "^1.14.1",
+    "pandora": "^1.8.13",
     "supertest": "^3.0.0",
     "ts-jest": "21.1.2",
     "ts-node": "^4.1.0"
